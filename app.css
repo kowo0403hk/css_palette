@@ -2,7 +2,7 @@ body {
   background-color: #101315;
   height: 100vh;
   margin: 0px;
-  border: none;
+  overflow: hidden;
 }
 
 #gallery {
@@ -15,6 +15,26 @@ body {
 .tile {
   border-radius: 1vmax;
   position: absolute;
+  transition: transform 800ms ease;
+}
+
+.tile:hover {
+  transform: scale(1.1);
+}
+
+.tile:hover > img {
+  opacity: 1;
+  transform: scale(1.01);
+  transition: opacity 800ms ease,
+      transform 800ms ease;
+}
+
+.tile > img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  border-radius: inherit;
+  opacity: 0;
 }
 
 .tile:nth-child(1) {
