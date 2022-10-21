@@ -16,5 +16,14 @@ window.onmousemove = (e) => {
     panY = maxY * yDecimal * -1;
 
   // update the CSS to transform the gallery's position by panX/Y numbers of pixels
-  gallery.style.transform = `translate(${panX}px, ${panY}px)`;
+  gallery.animate(
+    {
+      transform: `translate(${panX}px, ${panY}px)`,
+    },
+    {
+      duration: 4000,
+      fill: "forwards",
+      easing: "ease",
+    }
+  );
 };
