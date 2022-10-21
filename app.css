@@ -2,13 +2,14 @@ body {
   background-color: #101315;
   height: 100vh;
   margin: 0px;
+  border: none;
   /* overflow: hidden; */
 }
 
-.gallery {
+#gallery {
   /* to create a larger than viewport canvas */
   height: 140vmax;
-  width: 140vmax;
+  width: 150vmax;
   position: absolute;
 }
 
