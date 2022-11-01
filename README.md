@@ -13,6 +13,8 @@ All credits to Hyperplexed(https://www.youtube.com/watch?v=GHZBa_R93ag&list=PLD9
 5. Add images on tiles
 6. Scale up size when hover
 
+# Video
+
 ## Screenshots
 
 Home - Mouse up
